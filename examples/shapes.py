@@ -26,9 +26,13 @@ import Adafruit_ILI9341 as TFT
 import Adafruit_GPIO as GPIO
 import Adafruit_GPIO.SPI as SPI
 
+PITFT_2_8 = 18
+PITFT_2_2 = 25
+
+CURRENT_PITFT = PITFT_2_8
 
 # Raspberry Pi configuration.
-DC = 18
+DC = CURRENT_PITFT
 RST = 23
 SPI_PORT = 0
 SPI_DEVICE = 0
